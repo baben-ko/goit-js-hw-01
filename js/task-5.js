@@ -4,6 +4,7 @@ const CHILIE = "чили";
 const AUSTRALIA = "австралия";
 const INDIA = "индия";
 const JAMAICA = "ямайка";
+
 let correctDisplayCountryInAlert;
 let cost;
 
@@ -36,13 +37,13 @@ switch (deliveryCountry) {
     case JAMAICA:
         cost = 120;
         correctDisplayCountryInAlert = "на Ямайку";
-
         break;
     
     default:
         alert(`В вашей стране доставка не доступна`);
     
 }
+
 alert(`Доставка ${correctDisplayCountry} будет стоить ${cost} кредитов`);
     
 

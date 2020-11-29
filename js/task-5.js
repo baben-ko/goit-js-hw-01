@@ -1,47 +1,48 @@
 
+const CHINA = "китай";
+const CHILIE = "чили";
+const AUSTRALIA = "австралия";
+const INDIA = "индия";
+const JAMAICA = "ямайка";
+let correctDisplayCountryInAlert;
+let cost;
 
 let deliveryCountry = prompt(`Введите страну`);
 
 deliveryCountry = deliveryCountry.toLowerCase();
 
-console.log(deliveryCountry);
-
-let cost;
-
 switch (deliveryCountry) {
 
-    case 'китай':
+    case CHINA:
         cost = 100;
-        deliveryCountry = "Китай";
-        alert(`Доставка в ${deliveryCountry} будет стоить ${cost} кредитов`);
+        correctDisplayCountryInAlert = "в Китай";
         break;
     
-    case 'чили':
+    case CHILIE:
         cost = 250;
-        deliveryCountry = "Чили";
-        alert(`Доставка в ${deliveryCountry} будет стоить ${cost} кредитов`);
+        correctDisplayCountryInAlert = "в Чили";
         break;
     
-    case 'австралия':
+    case AUSTRALIA:
         cost = 170;
-        deliveryCountry = "Австралию";
-        alert(`Доставка в ${deliveryCountry} будет стоить ${cost} кредитов`);
+        correctDisplayCountryInAlert = "в Австралию";
         break;
     
-    case 'индия':
+    case INDIA:
         cost = 80;
-        deliveryCountry = "Индию";
-        alert(`Доставка в ${deliveryCountry} будет стоить ${cost} кредитов`);
+        correctDisplayCountryInAlert = "в Индию";
         break;
     
-    case 'ямайка':
+    case JAMAICA:
         cost = 120;
-        deliveryCountry = "Ямайку";
-        alert(`Доставка на ${deliveryCountry} будет стоить ${cost} кредитов`);
+        correctDisplayCountryInAlert = "на Ямайку";
+
         break;
     
     default:
         alert(`В вашей стране доставка не доступна`);
     
 }
+alert(`Доставка ${correctDisplayCountry} будет стоить ${cost} кредитов`);
     
+

@@ -44,7 +44,7 @@ switch (deliveryCountry) {
     
 }
 
-alert(`Доставка ${correctDisplayCountry} будет стоить ${cost} кредитов`);
+alert(`Доставка ${correctDisplayCountryInAlert} будет стоить ${cost} кредитов`);
 
 
 
